@@ -1,0 +1,5 @@
+<launch>
+    <arg name="map" default="$(find rb1_mapping)/maps/warehouse.map.yaml"/>
+    <node pkg="map_server" type="map_server" name="$(anon map_server)" output="screen" args="$(arg map)">
+    </node>
+</launch>
